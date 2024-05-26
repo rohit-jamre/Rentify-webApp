@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentify - Upload Home</title>
+    <link rel="stylesheet" href="uploadHome.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Rentify</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="homeUpload.html">Upload Home</a></li>
+                    <li><a href="browseHome.html">Browse Homes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="upload" class="section">
+            <h2>Upload Home</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="text" id="homeTitle" placeholder="Title" required>
+                <textarea id="homeDescription" placeholder="Description" required></textarea>
+                <input type="number" id="homePrice" placeholder="Rent Price" required>
+                <input type="text" id="homeLocation" placeholder="Location" required>
+                <input type="number" id="homeArea" placeholder="Area (in sq. ft.)" required>
+                <input type="number" id="homeBedrooms" placeholder="Number of Bedrooms" required>
+                <input type="number" id="homeBathrooms" placeholder="Number of Bathrooms" required>
+                <input type="text" id="nearbyHospitals" placeholder="Nearby Hospitals" required>
+                <input type="text" id="nearbyColleges" placeholder="Nearby Colleges" required>
+                <input type="file" id="homeImages" multiple required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Rentify. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
